@@ -2,12 +2,7 @@
 
 ARG ERPNEXT_VERSION
 FROM naderelabed/erpnext-worker:${ERPNEXT_VERSION}
-
 COPY repos ../apps
-
 USER root
-
-RUN install-app posawesome && \
-    install-app wiki
-
+RUN install-app posawesome && install-app wiki
 USER frappe
