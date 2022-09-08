@@ -33,6 +33,7 @@ jobs:
           #registry: ghcr.io
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
+          logout: false
 
       - name: Get Base Versions
         id: get-base-versions
