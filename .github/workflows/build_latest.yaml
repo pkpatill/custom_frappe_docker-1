@@ -48,6 +48,7 @@ jobs:
       - name: Push
         uses: docker/bake-action@v2.2.0
         with:
+          context: .
           push: true
           no-cache: true
           # set: "*.platform=linux/amd64,linux/arm64"
