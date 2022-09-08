@@ -3,7 +3,7 @@
 ARG FRAPPE_VERSION
 ARG ERPNEXT_VERSION
 
-FROM naderelabed/assets-builder:latest as assets
+FROM frappe/assets-builder:${FRAPPE_VERSION} as assets
 
 COPY repos apps
 
